@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* To-Do Container */
+.todo-container {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.todo-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+/* Input and Button */
+#task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.add-btn {
+  background: #0606d9;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #2575fc;
+}
+
+/* Task List */
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #f4f4f4;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  transition: transform 0.2s;
+}
+
+#task-list li:hover {
+  transform: scale(1.02);
+}
+
+/* Buttons for tasks */
+.task-buttons button {
+  margin-left: 8px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.task-buttons .edit-btn {
+  background: #ff9800;
+}
+
+.task-buttons .edit-btn:hover {
+  background: #e65100;
+}
+
+.task-buttons .delete-btn {
+  background: #e53935;
+}
+
+.task-buttons .delete-btn:hover {
+  background: #b71c1c;
+}
+
+.task-buttons .complete-btn {
+  background: #4caf50;
+}
+
+.task-buttons .complete-btn:hover {
+  background: #2e7d32;
+}
+
+/* Completed tasks */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
